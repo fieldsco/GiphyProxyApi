@@ -1,0 +1,15 @@
+{
+  "name": "GiphyProxyAPI",
+  "version": "0.0.1",
+  "description": "Proxy API with Basic Authentication and user creation, returns object from Giphy API if user is authenticated",
+  "main": "app.js",
+  "author": "Corey Fields",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.13.0",
+    "request": "~2.58.0",
+    "body-parser": "~1.13.1",
+    "mongoose": "~4.0.6",
+    "basic-auth-connect": "~1.0.0"
+  }
+}
