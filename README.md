@@ -1,15 +1,17 @@
 Giphy Proxy API
 =============================
-Server which hosts an API. The API has 2 endpoints, GET and POST. GET requests only respond to authenticated users (using Basic Authentication), which are created by POSTing a user (username= and password=). GET request returns a .gif based on the request from giphy.com's api. Users are stored in MongoDB.
+NodeJS server which hosts an API. The API has 2 endpoints, GET and POST. GET requests only respond to authenticated users (using Basic Authentication), which are created by POSTing a user (username= and password=). GET request returns a .gif based on the request from giphy.com's api. Users are stored in MongoDB.
 
 ### Requirements
 
-node, mongodb
+NodeJS installed. MongoDB is hosted at mongolab.
 
 ### Usage
 
 Clone the repo
+
 run 'npm install'
+
 run 'node app.js'
 
 ### ToDo
