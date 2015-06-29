@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //connect to our db
-mongoose.connect('mongodb://localhost:27017/giphytest2');
+//mongoose.connect('mongodb://localhost:27017/giphytest2'); //testing
+mongoose.connect('mongodb://corey:giphytest@ds031601.mongolab.com:31601/giphyapi'); //mongolab hosting
 
 //auth mechanism
 var auth = basicAuth(function(username, password, callback) {
@@ -100,7 +101,7 @@ router.post('/user', function(req, res) {
 app.use('/', router);
 
 //start the server
-var server = app.listen(3000, function () {
+var server = app.listen(8081, function () {
 	var port = server.address().port;
 	console.log('GiphyProxyAPI listening on port %s', port);
 });
